@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="enums\**" />
+      <EmbeddedResource Remove="enums\**" />
+      <None Remove="enums\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+    </ItemGroup>
+
+</Project>
